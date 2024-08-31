@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<style>
+    .button {
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 160px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.btn1{
+  padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #c6c7aa;
+}
+
+.btn1:hover {background-color: gray}
+
+.btn1:active {
+  background-color: blue;
+  box-shadow: 0 2px #666;
+  transform: translateY(6px);
+}
+
+.btn2{
+  padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #c6c7aa;
+}
+
+.btn2:hover {background-color: gray}
+
+.btn2:active {
+  background-color: blue;
+  box-shadow: 0 2px #666;
+  transform: translateY(6px);
+}
+
+.btn3{
+  padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #c6c7aa;
+}
+
+.btn3:hover {background-color: gray}
+
+.btn3:active {
+  background-color: blue;
+  box-shadow: 0 2px #666;
+  transform: translateY(6px);
+}
+.trans{
+    display: flex;
+    padding: 15px 35px;
+    gap: 2px;
+    
+}
+
+</style>
+<body>
+    <div class="nav">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="../Images/rose.jpg"><p class="small">Link</p></a></li>
+                        <li><a href="#"><p class="text-muted">Disabled</p></a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Dropdown1</a></li>
+                              <li><a href="#">Dropdown2</a></li>
+                              <li><a href="#">Dropdown3</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" action="/action_page.php">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search" name="search">
+                            </div>
+                            <button class="btn btn-outline-success" type="submit">Submit</button>
+                          </form>
+                        </div>
+            </div>
+
+<div class="jumbotron">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+</p> 
+<button class="button"><span><a href="https://www.bootstrapcdn.com/">Learn More</a></span></button>
+</div>
+
+<div class="trans0">
+<div class="trans">
+    <div class="p1">
+      <h3><b>Heading</b></h3>
+      <p>lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button class="btn1"><a href="https://github.com/">View details</a></button>
+    </div>
+    <div class="p2">
+      <h3><b>Heading</b></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button class="btn2"><a href="https://github.com/">View details</a></button>
+    </div>
+    <div class="p3">
+      <h3><b>Heading</b></h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <button class="btn3"><a href="https://github.com/">view details</a></button>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
+</body>
+</html>
+	
